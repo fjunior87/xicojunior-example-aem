@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+	jdbc.driver.class="com.mysql.jdbc.Driver"
+	jdbc.connection.uri="jdbc:mysql://localhost:3306/sakila"
+	jdbc.username="root"
+	jdbc.password="root"
+	jdbc.validation.query="select 1 "
+	pool.size="2"
+	pool.max.wait.msec="100" 
+	datasource.name="myDataSource"     
+
+/>

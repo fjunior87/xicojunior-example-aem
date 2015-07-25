@@ -37,13 +37,21 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <!--
-                        <Embed-Dependency>
-                            artifactId1,
-                            artifactId2;inline=true
-                        </Embed-Dependency>
-                        -->
-                        <Sling-Model-Packages>com.xicojunior.xicojunior_example.core</Sling-Model-Packages>
+                        <Sling-Model-Packages>com.xicojunior.xicojuniorexample.core.models</Sling-Model-Packages>
+                        <!-- <Import-Package>*,
+							com.mysql.jdbc,
+							com.mysql.jdbc.configs,
+							com.mysql.jdbc.exceptions,
+							com.mysql.jdbc.exceptions.jdbc4,
+							com.mysql.jdbc.integration.c3p0,
+							com.mysql.jdbc.integration.jboss,
+							com.mysql.jdbc.interceptors,
+							com.mysql.jdbc.jdbc2.optional,
+							com.mysql.jdbc.log,
+							com.mysql.jdbc.profiler,
+							com.mysql.jdbc.util,
+							javax.naming,	
+						</Import-Package> -->
                     </instructions>
                 </configuration>
             </plugin>
@@ -127,5 +135,30 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
+        		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.adobe.granite</groupId>
+			<artifactId>com.adobe.granite.replication.core</artifactId>
+			<version>5.12.2</version>
+			<scope>provided</scope>
+		</dependency>
+		
     </dependencies>
 </project>
